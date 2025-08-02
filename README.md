@@ -28,7 +28,7 @@ Este curso foi desenvolvido para apresentar os conceitos essenciais do **JavaScr
 
 Nenhuma experiência prévia com JavaScript é necessária, mas é recomendado ter:
 
-- Conhecimento básico de HTML e CSS
+- Conhecimento em informática básica!
 - Curiosidade e vontade de aprender! 😄
 
 ---
