@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores JS</title>
+</head>
+<body>
+
+    <p>Aperte F12 para ver o resultado!</p>
+
+
+    <script>
+
+        // VARIAVEIS
+
+        var exemploVar = "Lucas";
+        var exemploVar = "Senai";
+        exemploVar = "11111";
+        console.log(exemploVar);
+
+        let exemploLet = "Prudente";
+        exemploLet = "Regente";
+        console.log(exemploLet);
+        let exemploLet2 = "11111";
+
+        const exemploConst = "Setembro";
+        const exemploConst2 = "Outubro";
+        // exemploConst = "Lucas";
+       
+        // uma linha de comentário
+
+        /*
+        várias linhas de comentário
+        */
+
+        // TIPOS DE DADOS
+
+        //String
+        const nome = "Lucas";
+        const sobrenome = 'Torquato';
+        const multiplasLinhas = ` primeira linha
+        segunda linha
+        terceira linha`;
+
+        console.log(nome,sobrenome);
+        console.log(nome,"-",sobrenome);
+        console.log(nome+"-"+sobrenome);
+        console.log(`${nome}-${sobrenome}`);
+
+        //Number (inteiros e decimais)
+        const idade = 18;
+        const altura = 1.83;
+        const temperatura = -10;
+        console.log(idade);
+
+        //Boolean (verdadeiro ou falso)
+        const ativo = true;
+        const inativo = false;
+        const maiorIdade = idade >= 18;
+        console.log(maiorIdade);
+
+        //null e undefined
+        const valorNulo = null;
+        let valorIndefinido;
+
+        //OPERADORES ARITMÉTICOS
+        //+ - * / % ** ++ --
+
+        const a = 15;
+        const b = 5;
+
+        //PEMDAS
+
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log(a ** b);
+
+        console.log((a + b) / a);
+
+        let contador = 10;
+
+        console.log(contador++);
+        console.log(contador);
+        console.log(++contador);
+
+        console.log(contador--);
+        console.log(contador);
+        console.log(--contador);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
