@@ -81,6 +81,7 @@
 
         console.log((a + b) / a);
 
+        //Incremento e Decremento        
         let contador = 10;
 
         console.log(contador++);
@@ -91,11 +92,81 @@
         console.log(contador);
         console.log(--contador);
 
+        //Atribuição
+        let num = 10;
+        
+        num+=5; // num = num + 5
+        console.log(num);
 
+        num-=3; // num = num - 3
+        console.log(num);
 
+        num*=2; // num = num * 2
+        console.log(num);
 
+        num/=4; // num = num / 4
+        console.log(num);
 
+        //OPERADORES DE COMPARAÇÃO
+        const x = 5;
+        const y = "5";
+        const z = 10;
 
+        console.log(x == y);
+        console.log(x === y);
+
+        console.log(x != y);
+        console.log(x !== y)
+
+        console.log(x > y);
+        console.log(z >= x); // maior ou igual
+        console.log(x < y);
+        console.log(z <= x); // maior ou igual
+
+        //OPERADORES LÓGICOS
+        // ! not, || or, && and
+
+        const temIdade = true;
+        const temCarteira = true;
+        const temDinheiro = false;
+
+        console.log(!temIdade);
+        console.log(temIdade && temCarteira);
+        console.log(temIdade && temCarteira && temDinheiro);
+        console.log(temIdade || temCarteira || temDinheiro);
+
+        //CONVERSÕES DE TIPO
+
+        //Conversões Implícitas
+        console.log("5" + 2);
+        console.log("5" - 2);
+        console.log("5" * 2);
+
+        //Conversões Explícitas
+
+        //String -> Number
+        const textoNumero = "42.7";
+        console.log(Number(textoNumero));
+        console.log(parseInt(textoNumero));
+        console.log(parseFloat(textoNumero));
+        console.log(parseFloat("42px"));
+
+        //Number -> String
+        const numero = 123.10;
+        console.log(String(numero));
+        console.log(numero.toString())
+
+        //Bool
+        console.log(Boolean(0));
+        console.log(Boolean(1));
+        console.log(Boolean(""));
+        console.log(Boolean("Lucas"));
+
+        const numero1 = 1;
+        const string1 = "Lucas";
+
+        console.log(typeof numero1);
+        console.log(typeof string1);
 
     </script>
     
