@@ -24,7 +24,7 @@
             <h2 class="text-center mt-4" id="resultado"></h2>
         </div>
     </div>
-    
+
     <div class="container mt-5">
         <div class="card p-4">
             <h2 class="text-center">Calculadora de desconto</h2>
@@ -62,7 +62,7 @@
 
         //EX 1
 
-        document.querySelector("#btn-converter").addEventListener('click', function(){
+        document.querySelector("#btn-converter").addEventListener('click', function () {
             const valorReal = Number(document.querySelector("#valor-real").value);
             const valorConvertido = valorReal / 5.30;
             document.querySelector("#resultado").textContent = valorConvertido.toFixed(2);
@@ -71,23 +71,53 @@
 
         // EX 2
 
-        document.querySelector("#btn-calcular-desconto").addEventListener('click', function(){
+        document.querySelector("#btn-calcular-desconto").addEventListener('click', function () {
             const preco = Number(document.querySelector("#preco").value);
             const desconto = Number(document.querySelector("#desconto").value);
             const precoFinal = preco - (preco * (desconto / 100));
             document.querySelector("#resultado_desconto").textContent = precoFinal.toFixed(2);
+
         })
 
 
         // EX 3
 
-        document.querySelector("#btn-calcular-imc").addEventListener('click', function(){
+        document.querySelector("#btn-calcular-imc").addEventListener('click', function () {
             const peso = Number(document.querySelector("#peso").value);
             const altura = Number(document.querySelector("#altura").value);
             const imc = peso / (altura ** 2);
-            document.querySelector("#resultado_imc").textContent = imc.toFixed(2);
+            let mensagem, cor;
+
+            if (imc < 18.5) {
+                mensagem = "Abaixo do Peso";
+                cor = "yellow";
+            }
+            else if (imc <= 24.9) {
+                mensagem = "Peso Normal";
+                cor = "green";
+            }
+            else if (imc <= 29.9) {
+                mensagem = "Sobrepeso!"
+                cor = "orange";
+            } 
+            else if (imc <= 34.9) {
+                mensagem = "Obesidade I!"
+                cor = "red";
+            } 
+            else if (imc <= 39.9) {
+                mensagem = "Obesidade II!"
+                cor = "firebrick";
+            } 
+            else {
+                mensagem = "Obesidade III (mórbida)";
+                cor = "darkred";
+            }
+
+            document.querySelector("#resultado_imc").textContent = ` O seu IMC é ${imc.toFixed(2)} e a classificação é ${mensagem}`;
+            document.querySelector("#resultado_imc").style.color = cor;
+
         })
-        
+
     </script>
 
 </body>
