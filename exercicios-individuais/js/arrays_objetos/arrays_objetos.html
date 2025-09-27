@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Arrays e Objetos</title>
+</head>
+<body>
+
+    <p>F12 para ver as respostas!</p>
+    
+    <script>
+        // Exercício1
+        const playlist = ["Infinita Highway","Dom Quixote","3 X 4"];
+        console.log(playlist[0]);
+        playlist.push("O Papa É Pop");
+        console.log(playlist);
+        playlist.pop()
+        console.log(playlist);
+        console.log(playlist.length);
+
+        // Exercício2
+
+        const filme = {
+            nome: "Velozes e Furiosos 5",
+            diretor: "Justin Lin",
+            ano: 2011
+        }
+
+        console.log(`O filme ${filme.nome}, dirigido por ${filme.diretor}, foi lançado em ${filme.ano}.`);
+
+        filme.personagens = ["DOM","Brian","Han"];
+
+        console.log(filme.personagens[0]);
+
+        console.log(filme);
+
+    </script>
+</body>
+</html>
